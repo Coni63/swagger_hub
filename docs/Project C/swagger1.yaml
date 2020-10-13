@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  description: "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters."
+  description: "Phasellus hendrerit, nibh ut interdum cursus, ante orci gravida urna, ac venenatis arcu nisl at enim. Vestibulum mollis porta risus, sit amet congue ex mattis a. Ut ac odio at libero venenatis tempor pulvinar ac nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus quis erat massa. Aliquam erat volutpat. Pellentesque ultrices elementum libero nec consequat. Pellentesque egestas vestibulum dui. Nulla facilisi. In sed viverra velit. Donec elementum ultrices vehicula. Ut varius, felis et euismod ultricies, arcu nunc aliquet dui, a euismod turpis ante a turpis. Proin porta erat est, at ornare felis viverra a. Aliquam ac consectetur turpis. Duis id quam iaculis, scelerisque diam vel, dapibus augue. Praesent malesuada metus non lacus dapibus convallis."
   version: "1.0.0"
   title: "Swagger Petstore"
   termsOfService: "http://swagger.io/terms/"

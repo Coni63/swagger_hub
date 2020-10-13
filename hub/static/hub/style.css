@@ -40,8 +40,12 @@ a:link {
 }
 
 .subproject {
-  display: block;
-  width: 100%;
+	flex-direction: row;
+	display: flex;
+	width:100%;
+	margin-bottom: 3em;
+	justify-content: left;
+	align-items: left;
 }
 
 .subproject .header {
@@ -54,20 +58,30 @@ a:link {
 	 background: #ffc72c;
 	 color: #53565A;
 	 position: relative;
-	 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	 box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+	 writing-mode: vertical-lr;
+	  text-orientation: sideways-left;
+	  transform:scale(-1);
   }
 
 .subproject .content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  padding-left: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  width:100%; */
 }
 
  .project-card {
 	 height: 400px;
 	 width: 350px;
 	 padding: 20px;
-	 margin:20px;
+	 /* margin:20px; */
 	 border-radius: 5px;
 	 background: #fffffb;
 	 position: relative;
@@ -81,6 +95,12 @@ a:link {
 }
  .project-card .description {
 	 margin-bottom: 20px;
+	 height: 180px;
+	 max-height: 180px;
+	 text-overflow: ellipsis;
+	 width: 100%;
+     display: block;
+     overflow: hidden
 }
  .project-card .social {
 	 display: flex;
@@ -125,21 +145,5 @@ a:link {
 	 margin-right: 10px;
 	 border-right: 4px solid white;
 	 padding-right: 10px;
-}
- @-webkit-keyframes gradientBG {
-	 0% {
-		 background-position: 0% 50%;
-	}
-	 100% {
-		 background-position: 100% 50%;
-	}
-}
- @keyframes gradientBG {
-	 0% {
-		 background-position: 0% 50%;
-	}
-	 100% {
-		 background-position: 100% 50%;
-	}
 }
  
