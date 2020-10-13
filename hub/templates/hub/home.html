@@ -1,0 +1,65 @@
+{% load static %}
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+	<link rel="stylesheet" type="text/css" href={% static "hub/style.css"%}>
+    <style>
+      html
+      {
+        box-sizing: border-box;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+
+      *,
+      *:before,
+      *:after
+      {
+        box-sizing: inherit;
+      }
+
+      body
+      {
+        margin:0;
+        background: #fafafa;
+      }
+    </style>
+  </head>
+
+  <body>
+	{% for project, files in context.items %}
+		<div class="subproject">
+			<div class="header">
+				<h1>{{ project }}</h1>
+			</div>
+			<div class="content">
+				{% for file in files %}
+
+					<div class="project-card">
+						<h1>
+							{{ file.title }}
+						</h1>
+						<div class="description">
+							{{ file.description }}
+						</div>
+						<div class="social">
+							<a href="swagger/?project={{ project }}&filename={{ file.filename }}" target="_blank">Open Swagger</a>
+						</div>
+						<footer>
+						<div class="projects">
+							<p>Version</p>
+							<p>{{ file.version }}</p>
+						</div>
+						</footer>
+					</div>
+
+				{% endfor %}
+			</div>
+		</div>
+	{% endfor %}
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap');
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+
+a:link {
+	color: #53565a;
+	text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: #53565a;
+	text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: #53565a;
+	text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+	color: #53565a;
+	text-decoration: none;
+  }
+
+ body {
+   padding: 5em;
+   display: flex;
+   flex-direction: column;
+	 /* justify-content: center; */
+	 align-items: center;
+	 /* height: 100vh; */
+	 font-family: "Roboto", arial, sans-serif;
+	 color: #222;
+}
+
+.subproject {
+  display: block;
+  width: 100%;
+}
+
+.subproject .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	/* padding: 5px; */
+	font-family: 'Sriracha', arial, sans-serif;
+	 background: #ffc72c;
+	 color: #53565A;
+	 position: relative;
+	 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+.subproject .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ .project-card {
+	 height: 400px;
+	 width: 350px;
+	 padding: 20px;
+	 margin:20px;
+	 border-radius: 5px;
+	 background: #fffffb;
+	 position: relative;
+	 box-shadow: 5px 5px 10px #53565A;
+}
+ .project-card h1 {
+	 font-family: 'Sriracha', arial, sans-serif;
+	 text-align: center;
+	 margin-bottom: 20px;
+	 color: #FF6633;
+}
+ .project-card .description {
+	 margin-bottom: 20px;
+}
+ .project-card .social {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 width: calc(100% - 40px);
+	 margin: 0 auto;
+}
+ .project-card .social a {
+	 text-align: center;
+	 /* border: solid 2px #ffc72c; */
+	 background: #ffc72c;
+	 width: 100%;
+	 padding: 5px 0;
+	 border-radius: 5px;
+
+}
+ .project-card .social a:hover {
+	 background: #FF6633;
+	 color: #53565A;
+	 cursor: pointer;
+}
+ .project-card footer {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 background: #53565A;
+	 color: white;
+	 width: 100%;
+	 position: absolute;
+	 bottom: 0;
+	 height: 30px;
+	 padding: 0 20px;
+	 margin-left: -20px;
+	 border-bottom-left-radius: 5px;
+	 border-bottom-right-radius: 5px;
+}
+ .project-card footer div {
+	 display: flex;
+}
+ .project-card footer div p:first-child {
+	 margin-right: 10px;
+	 border-right: 4px solid white;
+	 padding-right: 10px;
+}
+ @-webkit-keyframes gradientBG {
+	 0% {
+		 background-position: 0% 50%;
+	}
+	 100% {
+		 background-position: 100% 50%;
+	}
+}
+ @keyframes gradientBG {
+	 0% {
+		 background-position: 0% 50%;
+	}
+	 100% {
+		 background-position: 100% 50%;
+	}
+}
+ 
