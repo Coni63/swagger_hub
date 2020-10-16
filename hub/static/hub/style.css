@@ -87,20 +87,26 @@ a:link {
 	 position: relative;
 	 box-shadow: 5px 5px 10px #53565A;
 }
+.text-block {
+	height: 280px;
+	max-height: 280px;
+	display: flex; 
+	flex-direction: column;
+}
  .project-card h1 {
 	 font-family: 'Sriracha', arial, sans-serif;
 	 text-align: center;
 	 margin-bottom: 20px;
 	 color: #FF6633;
+	 line-height: 110%;
 }
  .project-card .description {
 	 margin-bottom: 20px;
-	 height: 180px;
-	 max-height: 180px;
+	 flex-grow: 1;
 	 text-overflow: ellipsis;
 	 width: 100%;
      display: block;
-     overflow: hidden
+     overflow: hidden;
 }
  .project-card .social {
 	 display: flex;

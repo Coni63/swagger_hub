@@ -40,11 +40,15 @@
 				{% for file in files %}
 
 					<div class="project-card">
-						<h1>
-							{{ file.title }}
-						</h1>
-						<div class="description">
-							{{ file.description }}
+						<div class="text-block">
+							<div class="title">
+								<h1>
+									{{ file.title }}
+								</h1>
+							</div>
+							<div class="description">
+								{{ file.description }}
+							</div>
 						</div>
 						<div class="social">
 							<a href="swagger/?project={{ project }}&filename={{ file.filename }}" target="_blank">Open Swagger</a>
