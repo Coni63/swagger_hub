@@ -9,14 +9,17 @@ import glob
 from . import utils
 
 def index(request):
-    ROOT = os.path.join(settings.BASE_DIR, "docs", "*", "*.y*ml")
+    ROOT = os.path.join(settings.BASE_DIR, "docs", "*", "*")
     context = defaultdict(list)
     for path in glob.glob(ROOT):
-        project = os.path.basename(os.path.dirname(path))
-        filename = os.path.basename(path)
-        info = utils.get_info(path)
-        info["filename"] = filename
-        context[project].append(info)
+        try:
+            project = os.path.basename(os.path.dirname(path))
+            filename = os.path.basename(path)
+            info = utils.get_info(path)
+            info["filename"] = filename
+            context[project].append(info)
+        except:
+            continue
     return render(request, 'hub/home.html', context={"context" : dict(context)})
 
 
